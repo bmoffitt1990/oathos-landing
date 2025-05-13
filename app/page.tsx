@@ -11,10 +11,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full bg-[#F4F1DE]/95 backdrop-blur supports-[backdrop-filter]:bg-[#F4F1DE]/60 border-b border-[#F2CC8F]">
         <div className="container flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-[#E07A5F] flex items-center justify-center text-white font-bold">
-              O
-            </div>
-            <span className="text-xl font-bold">OathOS</span>
+            <Image src="/icon.png" alt="OathOS Logo" width={140} height={140} />
           </div>
           <Button className="bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white">Start Free</Button>
         </div>
