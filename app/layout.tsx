@@ -33,20 +33,51 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-MMMPGPJWM1`}
-        />
-        <Script id="ga-init">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-MMMPGPJWM1');
-          `}
-        </Script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          <Script
+            strategy="afterInteractive"
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-MMMPGPJWM1`}
+          />
+          <Script id="ga-init">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MMMPGPJWM1');
+            `}
+          </Script>
+          <Script id="scroll-depth-tracker" strategy="afterInteractive">
+            {`
+              const thresholds = [25, 50, 75, 100];
+              const fired = new Set();
+
+              function reportScrollDepth() {
+                const scrollTop = window.scrollY;
+                const winHeight = window.innerHeight;
+                const docHeight = document.documentElement.scrollHeight;
+                const percent = Math.round((scrollTop + winHeight) / docHeight * 100);
+
+                thresholds.forEach((t) => {
+                  if (percent >= t && !fired.has(t)) {
+                    window.gtag('event', 'scroll_depth', {
+                      event_category: 'engagement',
+                      event_label: t + '%',
+                      value: t,
+                    });
+                    fired.add(t);
+                  }
+                });
+              }
+
+              window.addEventListener('scroll', () => {
+                requestAnimationFrame(reportScrollDepth);
+              });
+            `}
+            </Script>
+          {children}
+        </body>
     </html>
   )
 }
