@@ -6,10 +6,10 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://oathos.com'),
   title: 'OathOS – Make Promises You Keep',
   description: 'OathOS helps you stick to your habits by involving an accountability partner. Backed by behavior science.',
   viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#E07A5F',
   manifest: '/manifest.json',
   openGraph: {
     title: 'OathOS – Make Promises You Keep',
@@ -33,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="theme-color" content="#E07A5F" />
       </head>
       <body className={inter.className}>
           <Script

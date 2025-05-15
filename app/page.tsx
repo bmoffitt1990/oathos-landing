@@ -1,8 +1,10 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, Calendar, CheckCircle, Clock, MessageSquare, Star, Users } from "lucide-react"
+import { trackClick } from '@/lib/analytics';
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
           <Image src="/icon.png" alt="OathOS Logo" width={140} height={140} />
           </div>
-          <Button className="bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white">Start Free</Button>
+          <Button onClick={() => trackClick('top_bar_start_free')} className="bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white">Start Free</Button>
         </div>
       </header>
 
@@ -28,7 +30,7 @@ export default function Home() {
               <p className="text-lg md:text-xl text-[#3D405B]/80 max-w-[600px]">
                 OathOS turns your habits into commitments, backed by real accountability.
               </p>
-              <Button className="mt-4 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
+              <Button onClick={() => trackClick('hero_start_free')}  className="mt-4 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
                 Start Free
               </Button>
               <div className="w-full max-w-3xl mt-8">
@@ -45,7 +47,7 @@ export default function Home() {
         </section>
 
         {/* Problem Section */}
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full pt-12 md:pt-16 pb-4">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center space-y-4 max-w-[800px] mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold">Most Habits Fail in Isolation</h2>
@@ -93,7 +95,7 @@ export default function Home() {
         </section>
 
         {/* How It Works */}
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full pt-12 md:pt-16 pb-4">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center space-y-4 mb-10">
               <h2 className="text-2xl md:text-3xl font-bold">How OathOS Works</h2>
@@ -125,10 +127,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col items-center text-center space-y-4">
+            <Button onClick={() => trackClick('hero_start_free')}  className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
+                Start Free
+            </Button>
+          </div>
         </section>
 
+
         {/* Feature Highlights */}
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full pt-12 md:pt-16 pb-4">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center space-y-4 mb-10">
               <h2 className="text-2xl md:text-3xl font-bold">Built for Real Commitment</h2>
@@ -192,7 +200,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full pt-12 md:pt-16 pb-4">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center space-y-4 mb-10">
               <h2 className="text-2xl md:text-3xl font-bold">What Our Users Say</h2>
@@ -270,7 +278,7 @@ export default function Home() {
         </section>
 
         {/* Why It Works */}
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full pt-12 md:pt-16 pb-4">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center space-y-4 max-w-[800px] mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold">Why OathOS Works</h2>
@@ -284,7 +292,7 @@ export default function Home() {
                 </p>
                 <p className="text-right mt-2 text-sm text-[#3D405B]/70">— Journal of Behavioral Psychology, 2023</p>
               </div>
-              <Button className="mt-6 bg-[#81B29A] hover:bg-[#81B29A]/90 text-white">Learn More</Button>
+              <Button onClick={() => trackClick('learn_more')}  className="mt-6 bg-[#81B29A] hover:bg-[#81B29A]/90 text-white">Learn More</Button>
             </div>
           </div>
         </section>
@@ -295,7 +303,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center space-y-4 max-w-[600px] mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold">Ready to Show Up?</h2>
               <p className="text-lg text-[#3D405B]/80">Make a promise. Then keep it—with OathOS.</p>
-              <Button className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
+              <Button onClick={() => trackClick('make_your_first_oath')} className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
                 Make Your First Oath <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
