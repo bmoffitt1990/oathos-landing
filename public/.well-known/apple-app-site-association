@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "863GZT7A33.com.brandonmoffitt.oathos",
+        "paths": ["/invite/*"]
+      }
+    ]
+  }
+}
