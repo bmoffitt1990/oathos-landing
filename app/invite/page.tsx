@@ -1,12 +1,7 @@
 // app/invite/page.tsx
+'use client';
 import { useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-
-// app/invite/page.tsx
-export const metadata = {
-    title: 'Join me on OathOS',
-    robots: 'noindex, nofollow',
-  };  
 
 export default function InvitePage() {
   const searchParams = useSearchParams();
