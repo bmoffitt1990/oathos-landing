@@ -199,19 +199,19 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <div className="bg-gray-50 border border-gray-200 p-8 rounded-xl">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=48&width=48"
+                      src="/woman1.png"
                       width={48}
                       height={48}
-                      alt="User avatar"
-                      className="object-cover"
+                      alt="Jamie K. avatar"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <div>
                     <h3 className="font-bold">Jamie K.</h3>
-                    <p className="text-sm text-gray-500">Morning Runner</p>
+                    <p className="text-sm text-[#3D405B]/70">Morning Runner</p>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
@@ -220,19 +220,19 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 p-8 rounded-xl">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=48&width=48"
+                      src="/man1.png"
                       width={48}
                       height={48}
-                      alt="User avatar"
-                      className="object-cover"
+                      alt="Alex T. avatar"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <div>
                     <h3 className="font-bold">Alex T.</h3>
-                    <p className="text-sm text-gray-500">Meditation Practitioner</p>
+                    <p className="text-sm text-[#3D405B]/70">Meditation Practitioner</p>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
@@ -241,19 +241,19 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 p-8 rounded-xl md:col-span-2">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=48&width=48"
+                      src="/man2.png"
                       width={48}
                       height={48}
-                      alt="User avatar"
-                      className="object-cover"
+                      alt="Morgan L. avatar"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <div>
                     <h3 className="font-bold">Morgan L.</h3>
-                    <p className="text-sm text-gray-500">Writer</p>
+                    <p className="text-sm text-[#3D405B]/70">Writer</p>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
