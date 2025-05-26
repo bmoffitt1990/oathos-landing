@@ -60,11 +60,11 @@ export default function Home() {
                   <h3 className="font-bold text-xl mb-4">Doing it alone</h3>
                   <div className="aspect-square relative bg-gray-100 rounded-lg overflow-hidden mb-4">
                     <Image
-                      src="/placeholder.svg?height=300&width=300&text=Person+struggling+alone"
+                      src="/image1.png"
                       width={300}
                       height={300}
                       alt="Person struggling alone with habits"
-                      className="object-cover"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <p className="text-gray-600">Motivation fades, excuses pile up, and habits fall by the wayside.</p>
@@ -73,11 +73,11 @@ export default function Home() {
                   <h3 className="font-bold text-xl mb-4">With accountability</h3>
                   <div className="aspect-square relative bg-gray-100 rounded-lg overflow-hidden mb-4">
                     <Image
-                      src="/placeholder.svg?height=300&width=300&text=Two+people+supporting+each+other"
+                      src="/image2.png"
                       width={300}
                       height={300}
                       alt="Two people supporting each other"
-                      className="object-cover"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <p className="text-gray-600">
