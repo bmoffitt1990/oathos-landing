@@ -127,21 +127,6 @@ export default function ThankYouPage() {
                 No bloat, no unnecessary features — just the tools you need to turn intentions into reality.
               </p>
             </div>
-
-            {/* Contact Section */}
-            <div className="bg-[#E07A5F]/10 p-6 md:p-8 rounded-xl shadow-sm border border-[#E07A5F]/20">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">How to Reach Me</h2>
-
-              <p className="text-lg mb-4">For any questions, bugs, feature requests, or ideas, please email me at:</p>
-
-              <div className="bg-white p-4 rounded-lg border border-[#E07A5F]/30 mb-6">
-                <p className="font-bold text-[#E07A5F] text-lg">brandon.james.moffitt@gmail.com</p>
-              </div>
-
-              <p className="text-lg text-[#3D405B]/80">
-                Thank you again for joining this early journey — you're helping shape something truly meaningful.
-              </p>
-            </div>
           </div>
         </div>
       </main>
@@ -163,10 +148,7 @@ export default function ThankYouPage() {
               <Link href="#" className="hover:text-[#F2CC8F]">
                 Terms
               </Link>
-              <Link href="#" className="hover:text-[#F2CC8F]">
-                Help
-              </Link>
-              <Link href="#" className="hover:text-[#F2CC8F]">
+              <Link href="mailto:brandon.james.moffitt@gmail.com" className="hover:text-[#F2CC8F]">
                 Contact
               </Link>
             </div>

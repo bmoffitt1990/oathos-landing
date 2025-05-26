@@ -33,15 +33,6 @@ export default function Home() {
               <Button onClick={() => trackClick('hero_start_free')}  className="mt-4 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
                 Start Free
               </Button>
-              <div className="w-full max-w-3xl mt-8">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  width={800}
-                  height={400}
-                  alt="Two people supporting each other"
-                  className="w-full h-auto rounded-2xl object-cover"
-                />
-              </div>
             </div>
           </div>
         </section>
@@ -328,10 +319,7 @@ export default function Home() {
               <Link href="#" className="hover:text-[#F2CC8F]">
                 Terms
               </Link>
-              <Link href="#" className="hover:text-[#F2CC8F]">
-                Help
-              </Link>
-              <Link href="#" className="hover:text-[#F2CC8F]">
+              <Link href="mailto:brandon.james.moffitt@gmail.com" className="hover:text-[#F2CC8F]">
                 Contact
               </Link>
             </div>
