@@ -15,7 +15,9 @@ export default function Home() {
           <div className="flex items-center gap-2">
           <Image src="/icon.png" alt="OathOS Logo" width={140} height={140} />
           </div>
-          <Button onClick={() => trackClick('top_bar_start_free')} className="bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white">Start Free</Button>
+          <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
+            <Button onClick={() => trackClick('top_bar_start_free')} className="bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white">Start Free</Button>
+          </Link>
         </div>
       </header>
 
@@ -30,9 +32,11 @@ export default function Home() {
               <p className="text-lg md:text-xl text-[#3D405B]/80 max-w-[600px]">
                 OathOS turns your habits into commitments, backed by real accountability.
               </p>
-              <Button onClick={() => trackClick('hero_start_free')}  className="mt-4 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
-                Start Free
-              </Button>
+              <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
+                <Button onClick={() => trackClick('hero_start_free')}  className="mt-4 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
+                  Start Free
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -119,9 +123,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center text-center space-y-4">
-            <Button onClick={() => trackClick('hero_start_free')}  className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
-                Start Free
-            </Button>
+            <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
+              <Button onClick={() => trackClick('hero_start_free')}  className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
+                  Start Free
+              </Button>
+            </Link>
           </div>
         </section>
 
@@ -294,9 +300,11 @@ export default function Home() {
             <div className="flex flex-col items-center text-center space-y-4 max-w-[600px] mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold">Ready to Show Up?</h2>
               <p className="text-lg text-[#3D405B]/80">Make a promise. Then keep it—with OathOS.</p>
-              <Button onClick={() => trackClick('make_your_first_oath')} className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
-                Make Your First Oath <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
+                <Button onClick={() => trackClick('make_your_first_oath')} className="mt-6 bg-[#E07A5F] hover:bg-[#E07A5F]/90 text-white text-lg px-8 py-6">
+                  Make Your First Oath <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -313,7 +321,7 @@ export default function Home() {
               <span className="text-xl font-bold">OathOS</span>
             </div>
             <div className="flex gap-6 text-sm">
-              <Link href="#" className="hover:text-[#F2CC8F]">
+              <Link href="/privacy" className="hover:text-[#F2CC8F]">
                 Privacy
               </Link>
               <Link href="#" className="hover:text-[#F2CC8F]">
