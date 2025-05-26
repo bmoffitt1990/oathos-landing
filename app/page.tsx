@@ -290,7 +290,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold">Ready to Show Up?</h2>
-              <p className="text-xl text-gray-300">Make a promise. Then keep it—with OathOS.</p>
+              <p className="text-xl text-gray-300">Make a promise to yourself. Then keep it—with OathOS.</p>
               <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
                 <Button className="mt-8 bg-white hover:bg-gray-100 text-gray-900 text-lg px-8 py-4 h-auto">
                   Make Your First Oath <ArrowRight className="ml-2 h-5 w-5" />
