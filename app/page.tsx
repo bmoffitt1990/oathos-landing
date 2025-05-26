@@ -104,21 +104,21 @@ export default function Home() {
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold">Step 1</h3>
-                <p className="text-gray-600">Choose the habits you care about</p>
+                <p className="text-gray-600">Choose the habits you care about.</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-4 p-8 bg-gray-50 rounded-xl">
                 <div className="w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-4">
                   <Users className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold">Step 2</h3>
-                <p className="text-gray-600">Invite a partner (or get matched)</p>
+                <p className="text-gray-600">Invite a partner. Preferrably someone you're close with!</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-4 p-8 bg-gray-50 rounded-xl">
                 <div className="w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-4">
                   <MessageSquare className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold">Step 3</h3>
-                <p className="text-gray-600">Get reminders + support to stay on track</p>
+                <p className="text-gray-600">Get reminders + support to stay on track.</p>
               </div>
             </div>
           </div>
