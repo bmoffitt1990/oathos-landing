@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#E07A5F" />
+        <meta name="theme-color" content="#FFFFFF" />
       </head>
       <body className={inter.className}>
           <Script
