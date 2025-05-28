@@ -15,8 +15,14 @@ export default function Home() {
             <Image src="/oathos-icon.png" alt="OathOS" width={32} height={32} className="w-8 h-8" />
             <span className="text-xl font-bold">OathOS</span>
           </div>
-          <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white">Start Free</Button>
+          <Link href="https://apps.apple.com/us/app/oathos/id6745340539?platform=iphone" target="_blank" rel="noopener noreferrer">
+            <Image 
+              src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" 
+              alt="Download on the App Store" 
+              width={120} 
+              height={40} 
+              className="h-10 w-auto"
+            />
           </Link>
         </div>
       </header>
@@ -32,10 +38,14 @@ export default function Home() {
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl">
                 OathOS turns your habits into commitments, backed by real accountability.
               </p>
-              <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
-                <Button className="mt-8 bg-gray-900 hover:bg-gray-800 text-white text-lg px-8 py-4 h-auto">
-                  Start Free
-                </Button>
+              <Link href="https://apps.apple.com/us/app/oathos/id6745340539?platform=iphone" target="_blank" rel="noopener noreferrer" className="mt-8">
+                <Image 
+                  src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" 
+                  alt="Download on the App Store" 
+                  width={160} 
+                  height={53} 
+                  className="h-14 w-auto hover:opacity-80 transition-opacity"
+                />
               </Link>
             </div>
           </div>
@@ -291,10 +301,14 @@ export default function Home() {
             <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold">Ready to Show Up?</h2>
               <p className="text-xl text-gray-300">Make a promise to yourself. Then keep it—with OathOS.</p>
-              <Link href="https://apps.apple.com/us/app/oathos/id6745340539" target="_blank" rel="noopener noreferrer">
-                <Button className="mt-8 bg-white hover:bg-gray-100 text-gray-900 text-lg px-8 py-4 h-auto">
-                  Make Your First Oath <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+              <Link href="https://apps.apple.com/us/app/oathos/id6745340539?platform=iphone" target="_blank" rel="noopener noreferrer" className="mt-8">
+                <Image 
+                  src="/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" 
+                  alt="Download on the App Store" 
+                  width={160} 
+                  height={53} 
+                  className="h-14 w-auto hover:opacity-80 transition-opacity"
+                />
               </Link>
             </div>
           </div>
